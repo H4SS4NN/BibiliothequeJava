@@ -5,9 +5,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+
       var livre = new Livre();
 
-      livre.creationLivre();
+      while (true) {
+          livre.creationLivre();
+            System.out.println("Do you want to add another book? (yes/no)");
+            Scanner scanner = new Scanner(System.in);
+            String response = scanner.next();
+            if (response.equals("no")) {
+                break;
+            }
+      }
+
 
     }
 }

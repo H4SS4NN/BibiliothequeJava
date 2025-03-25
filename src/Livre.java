@@ -20,6 +20,10 @@ public class Livre {
                 this.anneePublication = scanner.nextInt();
                 System.out.println("enter the ISBN : ");
                 this.ISBN = scanner.next();
+                System.out.println(this);
+                new Bibliotheque().ajouterUnLivre(this);
+                System.out.println("Livre added successfully");
+
 
         }
 
