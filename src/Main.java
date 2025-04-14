@@ -10,7 +10,7 @@ public class Main {
 
       while (true) {
           livre.creationLivre();
-            System.out.println("Do you want to add another book? (yes/no)");
+            System.out.println("voulez vous ajouter un nouveau livre? (yes/no)");
             Scanner scanner = new Scanner(System.in);
             String response = scanner.next();
             if (response.equals("no")) {
